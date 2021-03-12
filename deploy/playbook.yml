@@ -1,6 +1,8 @@
 ---
 - name: Pull Calc Image from DockerHub
   hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python
   tasks:
     - name: Pull Image
       docker_image:
