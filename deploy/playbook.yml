@@ -1,0 +1,8 @@
+---
+- name: Pull Calc Image from DockerHub
+  hosts: all
+  tasks:
+    - name: Pull Image
+      docker_image:
+        name: rahulms/scientific-calc
+        source: pull
