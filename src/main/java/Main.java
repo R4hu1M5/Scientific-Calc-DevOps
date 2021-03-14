@@ -1,5 +1,7 @@
 import java.lang.*;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class Main {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
@@ -19,6 +21,9 @@ public class Main {
             }
         }
     }
+
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+    
     public static double squareRoot(float num){
         return Math.sqrt(num);
     }
