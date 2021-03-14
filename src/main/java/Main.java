@@ -22,8 +22,8 @@ public class Main {
         }
     }
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
-    
+    private static final Logger logger = LogManager.getLogger(Main.class);
+
     public static double squareRoot(float num){
         return Math.sqrt(num);
     }
