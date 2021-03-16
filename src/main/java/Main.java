@@ -58,7 +58,7 @@ public class Main {
     }
 
     public static double power(double num1, double num2){
-        logger.info("Called naturalLog function on: " + num1 + " and " + num2);
+        logger.info("Called power function on: " + num1 + " and " + num2);
         return Math.pow(num1, num2);
     }
 }
