@@ -37,7 +37,7 @@ public class Main {
 
     private static final Logger logger = LogManager.getLogger(Main.class);
 
-    public static double squareRoot(float num){
+    public static double squareRoot(double num){
         logger.info("Called squareRoot function on: " + num);
         return Math.sqrt(num);
     }
