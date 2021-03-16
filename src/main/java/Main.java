@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int choice, num;
-        float num1, num2;
+        double num1, num2;
         while(true) {
             System.out.println("Enter the operation you want to perform:");
             System.out.println("1. Square Root \n2. Factorial \n3. Natural Logarithm \n4. Power \n5. Exit");
             choice = in.nextInt();
             switch(choice){
                 case 1: System.out.println("Enter a number:");
-                        num1 = in.nextFloat();
+                        num1 = in.nextDouble();
                         System.out.println("The square root of " + num1 + " is " + squareRoot(num1) + "\n");
                         break;
                 case 2: System.out.println("Enter a non-negative integer:");
@@ -21,12 +21,12 @@ public class Main {
                         System.out.println("The factorial of " + num + " is " + factorial(num) + "\n");
                         break;
                 case 3: System.out.println("Enter a number:");
-                        num1 = in.nextFloat();
+                        num1 = in.nextDouble();
                         System.out.println("The natural logarithm of " + num1 + " is " + naturalLog(num1) + "\n");
                         break;
                 case 4: System.out.println("Enter a two numbers:");
-                        num1 = in.nextFloat();
-                        num2 = in.nextFloat();
+                        num1 = in.nextDouble();
+                        num2 = in.nextDouble();
                         System.out.println("The value of " + num1 + " raised to " + num2 + " is " + power(num1, num2) + "\n");
                         break;
                 case 5: System.exit(0);

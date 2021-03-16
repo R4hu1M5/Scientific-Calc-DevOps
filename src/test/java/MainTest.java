@@ -26,7 +26,7 @@ public class MainTest {
 
     @Test
     public void truePositiveFactorial(){
-        double ans = Main.factorial(0);
+        int ans = Main.factorial(0);
         assertEquals(1, ans);
     }
 
